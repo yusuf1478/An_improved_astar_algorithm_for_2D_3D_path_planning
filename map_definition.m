@@ -4,7 +4,7 @@ function map=map_definition()
 % clear;
 % close all;
 
-%%%% örnek ortam
+%%%% sample map
 % Npoly=13;
 % map.pgx{1}=[2 8.5 8.5 4 2 2 1 1 2 4 2];
 % map.pgy{1}=[8 10 1 3 3 1 1 6 6 5 8];
@@ -34,7 +34,7 @@ function map=map_definition()
 % map.pgy{13}=[0 2 2 0 0];
 
 
-%%%% ortam 1
+%%%% map 1
 map.pgx{1}=[3 3 10 10 3];
 map.pgy{1}=[0 20 20 0 0];
 map.pgx{2}=[0 13 13 0 0];
@@ -51,7 +51,7 @@ Npoly = size(map.pgx,2);
 map.startp=[1, 1];
 map.endp=[29, 29];
 
-%%%% ortam 2
+%%%% map 2
 % map.pgx{1}=[0 10 3 0 0];
 % map.pgy{1}=[20 23 30 30 20];
 % map.pgx{2}=[0 14 14 0 0];
@@ -80,7 +80,6 @@ map.yrange=[0 30];
 
 figure;
 set(gcf,'color','w');
-% plot([0 30 30 0 0],[0 0 30 30 0]);
 box on;
 xlabel 'x'; ylabel 'y'; grid on;
 hold on
@@ -90,11 +89,7 @@ excluded_area=0;
 for ii=1:Npoly    
     excluded_area=excluded_area+polyarea(map.pgx{ii},map.pgy{ii});
     p1=fill(map.pgx{ii},map.pgy{ii},[0.5,0.5,0.5]);
-end
 
-% p2=plot(map.startp(1),map.startp(2),'ks','LineWidth',2,'MarkerSize',8,'MarkerFaceColor','k');
-% p3=plot(map.endp(1),map.endp(2),'kx','LineWidth',2,'MarkerSize',10,'MarkerFaceColor','k');
-% legend([p1,p2,p3],{'Engel','Başlama Noktası','Hedef Nokta'},'Location','northeastoutside')
 
 hold off
 
