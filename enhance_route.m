@@ -45,31 +45,3 @@ for i=1:size(ggnode,1)-1
         end
     end
 end
-
-%generate_undirected_graph
-% ggedges=[];
-% for i=1:size(wroute,1)-1
-%  ggedges=[ggedges; wbol*(i-1)+1 wbol*i+1; wbol*i+1 wbol*(i-1)+1];
-%  gggraph(wbol*(i-1)+1, wbol*i+1)=1;
-%  gggraph(wbol*i+1, wbol*(i-1)+1)=1;
-% %  for j=wbol*(i-1)+1:wbol*i+1
-% %    gggraph(i, j)=1;
-% %    %gggraph(j, i)=1;
-% %  end;
-% end
-% for i=1:size(ggnode,1)-(wbol+1) 
-%     wbas = ceil(i/wbol)*wbol+2;
-%     for j=wbas:wbas+wbol-1
-%       x1=ggnode(i,1);
-%       x2=ggnode(j,1);   
-%       y1=ggnode(i,2);
-%       y2=ggnode(j,2); 
-%       % check this two nodes intersect any obstacle or not
-%       [xi,yi] = polyxpoly([x1 x2],[y1 y2],map.obsx,map.obsy);
-%       if length(xi)==0
-%         line([x1;x2],[y1;y2],'linewidth',0.1,'color','green');
-%         gggraph(i,j)=1;
-%         ggedges=[ggedges;i j];
-%       end      
-%     end
-% end
