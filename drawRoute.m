@@ -42,5 +42,4 @@ for ii=1:Npoly
     p6=fill(map.pgx{ii},map.pgy{ii},[0.5,0.5,0.5]);
 end
 axis([0 30 0 30]);
-% legend([p6,p2,p3,p5],{'Engel','Başlama Noktası','Hedef Nokta','Yol'},'Location','northeastoutside');
 hold off
