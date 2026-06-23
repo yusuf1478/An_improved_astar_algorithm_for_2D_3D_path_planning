@@ -1,5 +1,5 @@
 # SBA*
-An Improved A* Algorithm
+An Improved A* Algorithm for 2D Path Planning of Mobile Robots
 
 This implementation is based on the A* path planning framework from: https://github.com/joedavidbuilds/FOMR-1
 
