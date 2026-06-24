@@ -15,4 +15,4 @@ This project proposes a novel path planning method called Segment-Based A* (SBA*
 
 Paper: https://doi.org/10.1016/j.matcom.2024.12.015
 
-<img width="632" height="512" alt="image" src="https://github.com/user-attachments/assets/a7b5a072-0987-432a-8636-ce0a7ab57bbb" />
+<img width="1588" height="843" alt="image" src="https://github.com/user-attachments/assets/fe9f32e7-79f7-4caa-bcb3-3933a438fb04" />
