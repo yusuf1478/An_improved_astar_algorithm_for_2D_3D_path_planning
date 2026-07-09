@@ -9,8 +9,8 @@ title([ method '  Cost:' num2str(Cost)]);
 sn=exnodIndex(startnode);
 en=exnodIndex(endnode);
 % plot3(nodelocation(1:ns,1),nodelocation(1:ns,2),nodelocation(1:ns,3),'b*');
-plot3(nodelocation(sn,1),nodelocation(sn,2),nodelocation(sn,3),'rx','markersize',10);
-plot3(nodelocation(en,1),nodelocation(en,2),nodelocation(en,3),'rx','markersize',10);
+plot3(nodelocation(sn,1),nodelocation(sn,2),nodelocation(sn,3),'kx','markersize',10);
+plot3(nodelocation(en,1),nodelocation(en,2),nodelocation(en,3),'kx','markersize',10);
 
 if (wfull==1)
   for i=1:2:size(unedges,1)    
