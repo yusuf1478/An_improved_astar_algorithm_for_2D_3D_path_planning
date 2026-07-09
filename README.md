@@ -13,7 +13,7 @@ This project proposes a novel path planning method called Segment-Based A* (SBA*
 
 • Safe paths are planned to enable UVs to overcome obstacles encountered in complex 3D environments.
 
-This project has also been adapted for BFS, Dijkstra, dynamic programming, and RRT* algorithms in addition to A* and SBA*.
+This project has also been adapted for breadth-first search (BFS), dijkstra, dynamic programming, and rapidly-exploring random tree star (RRT*) algorithms in addition to A* and SBA*.
 
 Paper: https://doi.org/10.1016/j.matcom.2024.12.015
 
